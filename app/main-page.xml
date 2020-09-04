@@ -1,0 +1,23 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+xmlns:Lottie="nativescript-lottie" navigatingTo="navigatingTo">
+
+    <StackLayout class="wrapper">
+        <Lottie:LottieView 
+            src="res://animations/ns.json"
+            height="50"
+        ></Lottie:LottieView>
+
+        <Lottie:LottieView 
+            src="res://animations/spinner.json"
+            height="100" 
+            class="w-full h-center anim" 
+            loaded="lottieLoaded"
+        ></Lottie:LottieView>
+
+        <Button text="go" tap="onTap" class="-primary"></Button>
+
+        <Button text="send success" tap="onTapSuccess" class="-primary"></Button>
+        <Button text="send failure" tap="onTapFailure" class="-primary"></Button>
+    </StackLayout>
+</Page>
